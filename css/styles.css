@@ -8,6 +8,7 @@
   --background-color-body: #ffffff;
   --background-color-section: #f5f4fa;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -27,22 +28,9 @@ body {
 .link:focus {
   color: var(--secondary-accent-color);
 }
-.hero {
-  background-color: var(--background-color-hero-footer);
-}
 
 .btn {
   cursor: pointer;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--secondary-title-color);
-}
-
-.header-logo:hover,
-.header-logo:focus {
-  color: var(--main-title-color);
 }
 
 .logo {
@@ -54,6 +42,16 @@ body {
 
 .footer {
   background-color: var(--background-color-hero-footer);
+}
+
+.hidden {
+  display: none;
+}
+/* //////////////шапка header/////////////////////////*/
+
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--main-title-color);
 }
 
 .header-logo {
@@ -81,6 +79,12 @@ body {
   color: var(--main-text-color);
 }
 
+/* //////////////////hero герой/////////////////// */
+
+.hero {
+  background-color: var(--background-color-hero-footer);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -100,9 +104,7 @@ body {
   background-color: var(--secondary-accent-color);
 }
 
-.hidden {
-  display: none;
-}
+/* //////////////Преимущества features/////////////////////////*/
 
 .features-item-title {
   font-weight: 700;
@@ -115,12 +117,16 @@ body {
   color: var(--main-text-color);
 }
 
+/* //////////////Чем мы занимаемся doing/////////////////////////*/
+
 .doing-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
+/* //////////////Наша команда team/////////////////////////*/
 
 .team-title {
   font-weight: 700;
@@ -147,6 +153,13 @@ body {
   background-color: var(--background-color-section);
 }
 
+/* //////////////футер footer/////////////////////////*/
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--secondary-title-color);
+}
+
 .footer-logo {
   color: var(--secondary-title-color);
 }
@@ -165,6 +178,8 @@ body {
 .address {
   color: var(--secondary-title-color);
 }
+
+/* //////////////Проекты projects/////////////////////////*/
 
 .projects-button.btn {
   font-weight: 500;
