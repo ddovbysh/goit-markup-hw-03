@@ -17,6 +17,28 @@ body {
   background-color: var(--background-color-body);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -40,13 +62,10 @@ body {
   line-height: 1.19;
 }
 
-.footer {
-  background-color: var(--background-color-hero-footer);
-}
-
 .hidden {
   display: none;
 }
+
 /* //////////////шапка header/////////////////////////*/
 
 .header-logo:hover,
@@ -167,6 +186,10 @@ body {
 .footer-logo > span {
   color: var(--secondary-accent-color);
 }
+.footer {
+  background-color: var(--background-color-hero-footer);
+}
+
 .footer-link {
   font-style: normal;
   font-weight: 400;
