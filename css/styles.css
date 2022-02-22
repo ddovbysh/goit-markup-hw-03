@@ -9,6 +9,10 @@
   --background-color-section: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -66,14 +70,50 @@ img {
   display: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* //////////////шапка header/////////////////////////*/
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts-items:not(:last-child) {
+  margin-right: 50px;
+}
 .header-logo:hover,
 .header-logo:focus {
   color: var(--main-title-color);
 }
 
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
   color: var(--main-title-color);
 }
 
@@ -81,6 +121,9 @@ img {
   color: var(--secondary-accent-color);
 }
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -92,6 +135,9 @@ img {
 }
 
 .header-contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -101,10 +147,13 @@ img {
 /* //////////////////hero герой/////////////////// */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--background-color-hero-footer);
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -114,6 +163,8 @@ img {
   color: var(--secondary-title-color);
 }
 .hero-button {
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
