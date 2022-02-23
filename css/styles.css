@@ -182,7 +182,7 @@ img {
   text-align: center;
 }
 .hero-button {
-  width: 200px;
+  min-width: 200px;
   padding: 10px 32px;
   align-items: center;
   border: none;
@@ -206,9 +206,15 @@ img {
 .features-list {
   display: flex;
 }
-.features-item:not(:last-child) {
+.features-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
   margin-right: 30px;
 }
+
+.features-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .features-item-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -223,26 +229,60 @@ img {
 
 /* //////////////Чем мы занимаемся doing/////////////////////////*/
 
+.doing {
+  padding-top: 0;
+}
 .doing-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doing-item {
+  flex-basis: calc(100% - 3 * 30px) / 3;
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* //////////////Наша команда team/////////////////////////*/
 
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .team-member {
+  flex-basis: calc(100% - 4 * 30px) / 4;
   text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member-name {
+  padding: 30px 0px;
 }
 
 .team-member-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
